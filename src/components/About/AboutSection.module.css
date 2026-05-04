@@ -1,0 +1,161 @@
+.about {
+  padding: 16rem 1rem;
+  background-color: #f9fcff;
+  position: relative;
+  overflow: hidden;
+}
+
+.title {
+  font-size: 3.2rem;
+  font-weight: 500;
+  margin-bottom: 10rem;
+  letter-spacing: -0.032rem;
+  color: #141617;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  position: relative;
+  max-width: 142rem;
+  margin: 0 auto;
+}
+
+.founders {
+  display: flex;
+  gap: 1rem;
+}
+
+.founder {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+  width: 37.55rem;
+}
+
+.founderPhoto {
+  width: 10rem;
+  height: 14rem;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.photo {
+  object-fit: cover;
+}
+
+.founderInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.founderName {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #141617;
+  line-height: 1.2;
+}
+
+.founderRole {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: rgba(20, 22, 23, 0.4);
+  line-height: 1.2;
+}
+
+.descriptionRow {
+  display: flex;
+  gap: 1rem;
+  position: relative;
+  width: 100%;
+}
+
+.descriptionCol {
+  width: 37.55rem;
+  flex-shrink: 0;
+}
+
+.descriptionCol p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #141617;
+  margin-bottom: 0.8rem;
+}
+
+.descriptionCol p:last-child {
+  margin-bottom: 0;
+}
+
+/* Stickers */
+.workHardSticker {
+  position: absolute;
+  left: 50.2rem;
+  top: 21rem;
+  z-index: 2;
+  transform: rotate(-8.09deg);
+}
+
+.lovinGroup {
+  position: absolute;
+  left: 72.5rem; /* 715px + 10px padding */
+  top: -3.9rem;  /* (11026 - 11065) = -39px */
+  z-index: 1;
+}
+
+.lovinImage {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 10rem 1rem;
+  }
+
+  .title {
+    margin-bottom: 4rem;
+  }
+
+  .contentWrapper {
+    gap: 4rem;
+  }
+
+  .founders {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .descriptionRow {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .descriptionCol {
+    width: 100%;
+  }
+
+  .workHardSticker {
+    position: absolute;
+    left: calc(50% + 5.5rem);
+    top: 50rem;
+    transform: translateX(-50%) rotate(-8.09deg);
+    width: 10.8rem;
+    height: auto;
+  }
+
+  .lovinGroup {
+    position: relative;
+    left: 5.05rem;
+    top: 0;
+    margin-top: 4rem;
+    width: 22.1rem;
+    height: auto;
+  }
+  
+  .lovinImage {
+    width: 100%;
+    height: auto;
+  }
+}

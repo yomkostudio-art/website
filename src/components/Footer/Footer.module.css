@@ -1,0 +1,189 @@
+.footer {
+  background-color: #141617;
+  padding: 10rem 1rem 1rem;
+  color: #f9fcff;
+}
+
+.container {
+  max-width: 142rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+/* Info Column */
+.infoCol {
+  width: 37.55rem;
+  height: 18.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.logo {
+  width: 5.4rem;
+  height: 1.7rem;
+  position: relative;
+  opacity: 1;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+}
+
+.sloganWrapper {
+  position: relative;
+}
+
+.slogan {
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.032rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.eyeIcon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.8rem;
+}
+
+/* Projects Column */
+.projectsCol {
+  width: 37.55rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.colTitle {
+  font-size: 1.6rem;
+  font-weight: 500;
+  opacity: 0.4;
+}
+
+.projectNav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.projectLink {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: inherit;
+  text-decoration: none;
+  line-height: 1.2;
+  position: relative;
+  width: fit-content;
+}
+
+.projectLink::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.2rem;
+  width: 0;
+  height: 1.5px;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+
+.projectLink:hover::after {
+  width: 100%;
+}
+
+/* Links Column */
+.linksCol {
+  width: 37.55rem;
+  height: 18.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.socialLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.4;
+  transition: opacity 0.3s ease;
+  position: relative;
+}
+
+.socialLink:hover {
+  opacity: 1;
+}
+
+.linkText {
+  position: relative;
+}
+
+.linkText::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.2rem;
+  width: 0;
+  height: 1.5px;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+
+.socialLink:hover .linkText::after {
+  width: 100%;
+}
+
+.arrowIcon {
+  display: flex;
+  align-items: center;
+}
+
+.copyright {
+  font-size: 1.6rem;
+  font-weight: 500;
+  opacity: 0.4;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .footer {
+    padding: 10rem 1rem 1rem;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4rem;
+  }
+
+  .infoCol, .projectsCol, .linksCol {
+    width: 100%;
+    height: auto;
+  }
+
+  .infoCol {
+    height: 18.8rem;
+  }
+
+  .linksCol {
+    height: 18.8rem;
+  }
+}

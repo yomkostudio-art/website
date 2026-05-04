@@ -1,0 +1,25 @@
+:root {
+  --dark-main: #141617;
+  --bg-main: #f9fcff;
+  --accent-orange: #f76400;
+  --accent-red: #ff5a55;
+  --accent-blue: #2858d2;
+  --accent-green: #095626;
+  
+  --bg-orange-soft: #ffede0;
+  --bg-red-soft: #ffe6e5;
+  --bg-blue-soft: #e5ecff;
+  --bg-green-soft: #e3ffee;
+
+  /* Scaling base */
+  --base-width: 1440;
+  
+  /* Shared layout constants */
+  --col-width: 34.7rem;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --base-width: 360;
+  }
+}
