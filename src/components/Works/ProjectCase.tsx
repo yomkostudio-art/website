@@ -94,7 +94,7 @@ export default function ProjectCase({
 
                   <div className={styles.centeredLogo}>
                     <Image 
-                      src={item.src} 
+                      src={assetUrl(item.src)} 
                       alt="" 
                       width={527} 
                       height={282}
@@ -103,7 +103,7 @@ export default function ProjectCase({
                   </div>
                 ) : (
                   <Image 
-                    src={item.src} 
+                    src={assetUrl(item.src)} 
                     alt="" 
                     fill
                     className={styles.image}

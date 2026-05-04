@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { assetUrl } from "@/utils/asset";
 import styles from "./Footer.module.css";
 
 export default function Footer() {
@@ -19,7 +20,7 @@ export default function Footer() {
         <div className={styles.infoCol}>
           <div className={styles.logo}>
             <Image 
-              src="/assets/media/logo/logo.svg" 
+              src={assetUrl("/assets/media/logo/logo.svg")} 
               alt="Yomko Logo" 
               width={54} 
               height={17} 
@@ -31,7 +32,7 @@ export default function Footer() {
                 Говорим ёмко
                 <span className={styles.eyeIcon}>
                   <Image 
-                    src="/assets/media/footer-section/eye-footer.svg" 
+                    src={assetUrl("/assets/media/footer-section/eye-footer.svg")} 
                     alt="Eye icon" 
                     width={35} 
                     height={23} 
@@ -61,19 +62,19 @@ export default function Footer() {
             <a href="https://t.me/yomkostudio" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
               <span className={styles.linkText}>Telegram</span>
               <span className={styles.arrowIcon}>
-                <Image src="/assets/media/footer-section/icon-arrow.svg" alt="Arrow" width={15} height={14} />
+                <Image src={assetUrl("/assets/media/footer-section/icon-arrow.svg")} alt="Arrow" width={15} height={14} />
               </span>
             </a>
             <a href="https://www.instagram.com/yomkostudio/" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
               <span className={styles.linkText}>Instagram</span>
               <span className={styles.arrowIcon}>
-                <Image src="/assets/media/footer-section/icon-arrow.svg" alt="Arrow" width={15} height={14} />
+                <Image src={assetUrl("/assets/media/footer-section/icon-arrow.svg")} alt="Arrow" width={15} height={14} />
               </span>
             </a>
             <a href="mailto:yomkostudio@gmail.com" className={styles.socialLink}>
               <span className={styles.linkText}>Email</span>
               <span className={styles.arrowIcon}>
-                <Image src="/assets/media/footer-section/icon-arrow.svg" alt="Arrow" width={15} height={14} />
+                <Image src={assetUrl("/assets/media/footer-section/icon-arrow.svg")} alt="Arrow" width={15} height={14} />
               </span>
             </a>
           </div>

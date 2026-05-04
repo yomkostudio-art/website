@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
+import { assetUrl } from "@/utils/asset";
 import styles from "./ContactPopup.module.css";
 
 export default function ContactPopup() {
@@ -59,7 +60,7 @@ export default function ContactPopup() {
               <span className={styles.buttonText}>Обсудить задачу</span>
               <div className={styles.iconWrapper}>
                 <Image 
-                  src="/assets/media/popup/icon-open.svg" 
+                  src={assetUrl("/assets/media/popup/icon-open.svg")} 
                   alt="Open" 
                   width={23} 
                   height={16} 
@@ -80,7 +81,7 @@ export default function ContactPopup() {
                 <span className={styles.closeText}>Закрыть</span>
                 <div className={styles.iconCloseWrapper}>
                   <Image 
-                    src="/assets/media/popup/icon-close.svg" 
+                    src={assetUrl("/assets/media/popup/icon-close.svg")} 
                     alt="Close" 
                     width={23} 
                     height={16} 
@@ -99,20 +100,20 @@ export default function ContactPopup() {
                   <div className={styles.socialLinks}>
                     <a href="https://t.me/yomkostudio" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
                       <span className={styles.linkText}>Telegram</span>
-                      <Image src="/assets/media/footer-section/icon-arrow.svg" alt="Arrow" width={15} height={14} />
+                      <Image src={assetUrl("/assets/media/footer-section/icon-arrow.svg")} alt="Arrow" width={15} height={14} />
                     </a>
                     <a href="https://www.instagram.com/yomkostudio/" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
                       <span className={styles.linkText}>Instagram</span>
-                      <Image src="/assets/media/footer-section/icon-arrow.svg" alt="Arrow" width={15} height={14} />
+                      <Image src={assetUrl("/assets/media/footer-section/icon-arrow.svg")} alt="Arrow" width={15} height={14} />
                     </a>
                     <a href="mailto:yomkostudio@gmail.com" className={styles.socialLink}>
                       <span className={styles.linkText}>Email</span>
-                      <Image src="/assets/media/footer-section/icon-arrow.svg" alt="Arrow" width={15} height={14} />
+                      <Image src={assetUrl("/assets/media/footer-section/icon-arrow.svg")} alt="Arrow" width={15} height={14} />
                     </a>
                   </div>
                   <div className={styles.qrWrapper}>
                     <Image 
-                      src="/assets/media/popup/qr.svg" 
+                      src={assetUrl("/assets/media/popup/qr.svg")} 
                       alt="QR Code" 
                       width={65} 
                       height={65} 

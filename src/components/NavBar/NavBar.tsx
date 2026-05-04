@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import { assetUrl } from "@/utils/asset";
 import styles from "./NavBar.module.css";
 
 export default function NavBar() {
@@ -30,7 +31,7 @@ export default function NavBar() {
       <div className={styles.logo}>
         <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({top: 0, behavior: 'smooth'}); }}>
           <Image 
-            src="/assets/media/logo/logo.svg" 
+            src={assetUrl("/assets/media/logo/logo.svg")} 
             alt="Yomko Logo" 
             width={54} 
             height={17} 

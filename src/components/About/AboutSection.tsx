@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { assetUrl } from "@/utils/asset";
 import styles from "./AboutSection.module.css";
 
 export default function AboutSection() {
@@ -12,7 +13,7 @@ export default function AboutSection() {
           <div className={styles.founder}>
             <div className={styles.founderPhoto}>
               <Image 
-                src="/assets/media/about-section/ab-01.avif" 
+                src={assetUrl("/assets/media/about-section/ab-01.avif")} 
                 alt="Юрий Боровиков" 
                 fill 
                 className={styles.photo}
@@ -27,7 +28,7 @@ export default function AboutSection() {
           <div className={styles.founder}>
             <div className={styles.founderPhoto}>
               <Image 
-                src="/assets/media/about-section/ab-02.avif" 
+                src={assetUrl("/assets/media/about-section/ab-02.avif")} 
                 alt="Алексей Прохоров" 
                 fill 
                 className={styles.photo}
@@ -60,7 +61,7 @@ export default function AboutSection() {
 
         <div className={styles.lovinGroup}>
           <Image 
-            src="/assets/media/about-section/lovin.png" 
+            src={assetUrl("/assets/media/about-section/lovin.png")} 
             alt="Lovin" 
             width={291} 
             height={372}
@@ -71,7 +72,7 @@ export default function AboutSection() {
         {/* Absolute Objects */}
         <div className={styles.workHardSticker}>
           <Image 
-            src="/assets/media/about-section/work-hard.svg" 
+            src={assetUrl("/assets/media/about-section/work-hard.svg")} 
             alt="Work hard have fun" 
             width={124} 
             height={64} 
