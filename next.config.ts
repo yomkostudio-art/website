@@ -2,8 +2,10 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: "export",
+  basePath: "/website",
+  assetPrefix: "/website",
   images: {
-    unoptimized: true, // Required for static export (next/image optimization is server-side)
+    unoptimized: true,
   },
 };
 
