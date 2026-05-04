@@ -22,7 +22,7 @@ export default function ContactPopup() {
   const getDimensions = () => {
     if (isMobile) {
       return {
-        width: isOpen ? "calc(100vw - 40px)" : "235px",
+        width: isOpen ? "calc(100vw - 40px)" : "max-content",
         height: isOpen ? "350px" : "44px",
       };
     }
