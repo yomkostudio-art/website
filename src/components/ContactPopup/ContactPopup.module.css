@@ -197,7 +197,7 @@
   }
 
   .closedContent {
-    padding: 10px 3px 10px 15px; /* Reduced right padding */
+    padding: 10px 15px; /* Increased padding */
     width: 235px; /* Matches JS dimension */
     height: 44px;
   }
