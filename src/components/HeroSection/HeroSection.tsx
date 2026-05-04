@@ -15,7 +15,7 @@ export default function HeroSection() {
           </h1>
           <div className={styles.eyeIcon}>
             <Image 
-              src="/assets/media/hero-section/eye-icon.svg" 
+              src={assetUrl("/assets/media/hero-section/eye-icon.svg")} 
               alt="" 
               width={64} 
               height={40} 
