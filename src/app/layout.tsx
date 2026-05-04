@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     siteName: "Yomko Studio",
     images: [
       {
-        url: "/assets/opengraph/opengraph-image.jpg",
+        url: "https://yomko.studio/assets/opengraph/opengraph-image.jpg",
         width: 1200,
         height: 630,
         alt: "Yomko Studio OpenGraph Image",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Yomko Studio | Branding & Website Development",
     description: "Yomko Studio is a full-service communication design agency specializing in unique visual identities and website development.",
-    images: ["/assets/opengraph/opengraph-image.jpg"],
+    images: ["https://yomko.studio/assets/opengraph/opengraph-image.jpg"],
   },
 };
 
