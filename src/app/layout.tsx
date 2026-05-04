@@ -5,9 +5,9 @@ export const metadata: Metadata = {
   title: "Yomko Studio | Branding & Website Development, Creative Visual Identity",
   description: "Yomko Studio is a full-service communication design agency specializing in creating unique visual identities, impactful branding strategies, and seamless website development. We bring your brand to life through custom graphic images, print products, and digital solutions tailored to your business needs.",
   icons: {
-    icon: "/website/assets/favicon/emko-favikon-32.png",
-    shortcut: "/website/assets/favicon/emko-favikon-32.png",
-    apple: "/website/assets/favicon/emko-favikon-120.png",
+    icon: "/assets/favicon/emko-favikon-32.png",
+    shortcut: "/assets/favicon/emko-favikon-32.png",
+    apple: "/assets/favicon/emko-favikon-120.png",
   },
   openGraph: {
     title: "Yomko Studio | Branding & Website Development",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     siteName: "Yomko Studio",
     images: [
       {
-        url: "/website/assets/opengraph/opengraph-image.jpg",
+        url: "/assets/opengraph/opengraph-image.jpg",
         width: 1200,
         height: 630,
         alt: "Yomko Studio OpenGraph Image",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Yomko Studio | Branding & Website Development",
     description: "Yomko Studio is a full-service communication design agency specializing in unique visual identities and website development.",
-    images: ["/website/assets/opengraph/opengraph-image.jpg"],
+    images: ["/assets/opengraph/opengraph-image.jpg"],
   },
 };
 

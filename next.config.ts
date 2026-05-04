@@ -1,12 +1,12 @@
 import type { NextConfig } from "next";
 
 const isProd = process.env.NODE_ENV === "production";
-const basePath = isProd ? "/website" : "";
+const basePath = ""; // No prefix for custom domain
 
 const nextConfig: NextConfig = {
   output: "export",
   basePath: basePath,
-  assetPrefix: isProd ? "/website" : "",
+  assetPrefix: "",
   env: {
     NEXT_PUBLIC_BASE_PATH: basePath,
   },
