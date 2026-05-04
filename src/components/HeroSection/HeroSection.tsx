@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { assetUrl } from "@/utils/asset";
 import styles from "./HeroSection.module.css";
 
 export default function HeroSection() {
@@ -44,7 +45,7 @@ export default function HeroSection() {
           loop 
           playsInline 
           className={styles.video}
-          src="/assets/media/hero-section/showreel-yomko-2.webm"
+          src={assetUrl("/assets/media/hero-section/showreel-yomko-2.webm")}
         />
       </div>
 

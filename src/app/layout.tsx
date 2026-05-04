@@ -45,8 +45,20 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const bp = process.env.NEXT_PUBLIC_BASE_PATH || "";
   return (
     <html lang="ru">
+      <head>
+        <style dangerouslySetInnerHTML={{ __html: `
+          @font-face {
+            font-family: "Pretendard Variable";
+            src: url("${bp}/assets/font/PretendardVariable.woff2") format("woff2-variations");
+            font-weight: 100 900;
+            font-style: normal;
+            font-display: swap;
+          }
+        `}} />
+      </head>
       <body>
         {children}
       </body>

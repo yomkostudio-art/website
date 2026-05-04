@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { assetUrl } from "@/utils/asset";
 import styles from "./ProjectCase.module.css";
 
 interface ProjectCaseProps {
@@ -86,7 +87,7 @@ export default function ProjectCase({
                     loop 
                     playsInline 
                     className={styles.video}
-                    src={item.src}
+                    src={assetUrl(item.src)}
                   />
                 ) : item.isLogoOnBlack ? (
 
