@@ -28,28 +28,6 @@ export default function WorksSection() {
       ],
     },
     {
-      id: "flowwow-marketplace",
-      name: "Маркетплейс цветов и подарков",
-      category: "Веб-сайт, визуальная коммуникация. 2026",
-      clientTag: {
-        text: "Flowwow",
-        color: "#ff5a55",
-        bg: "#ffe6e5",
-      },
-      team: [
-        { label: "In collaboration:", value: "Flowwow team" },
-      ],
-      description: "Разработка визуальной продуктовой коммуникации Flowwow.<br />Дизайн и верстка информационной веб-платформы для селлеров Flowwow",
-      visuals: [
-        [{ type: "video", src: "/assets/media/projects-section/project-2/p2-01.webm", height: "70rem", aspectRatio: "1420 / 700", backgroundColor: "rgba(54, 60, 72, 0.05)" }],
-        [
-          { type: "image", src: "/assets/media/projects-section/project-2/p2-02.avif", height: "60rem", mobileHeight: "30rem" },
-          { type: "image", src: "/assets/media/projects-section/project-2/p2-03.avif", height: "60rem", mobileHeight: "30rem" },
-        ],
-        [{ type: "image", src: "/assets/media/projects-section/project-2/p2-04.avif", height: "71.1rem" }],
-      ],
-    },
-    {
       id: "molodoy-platon",
       name: "Молодой Платон × Flowwow",
       category: "Рекламная кампания, мерч. 2026",

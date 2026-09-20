@@ -5,7 +5,6 @@ import styles from "./Footer.module.css";
 export default function Footer() {
   const projects = [
     { name: "Winline «Битва за деньги»", id: "winline" },
-    { name: "Маркетплейс цветов и подарков", id: "flowwow-marketplace" },
     { name: "Молодой Платон × Flowwow", id: "molodoy-platon" },
     { name: "Studio Pizza, Music & Wine", id: "studio-pizza" },
     { name: "Выставка водонепроницаемых технологий", id: "no-weather" },

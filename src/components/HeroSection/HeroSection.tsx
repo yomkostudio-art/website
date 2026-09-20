@@ -31,7 +31,6 @@ export default function HeroSection() {
           <span className={styles.label}>Клиенты</span>
           <div className={styles.clientList}>
             <span className={styles.clientTag} style={{ color: "#f76400", backgroundColor: "#ffede0" }}>Medium Quality</span>
-            <span className={styles.clientTag} style={{ color: "#ff5a55", backgroundColor: "#ffe6e5" }}>Flowwow</span>
             <span className={styles.clientTag} style={{ color: "#2858d2", backgroundColor: "#e5ecff" }}>ITMO</span>
             <span className={styles.clientTag} style={{ color: "#095626", backgroundColor: "#e3ffee" }}>Sasha Design Studio</span>
           </div>
