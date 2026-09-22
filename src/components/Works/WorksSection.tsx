@@ -145,7 +145,6 @@ export default function WorksSection() {
 
   return (
     <section id="works" className={styles.works}>
-      <h2 className={styles.sectionTitle}>Работы</h2>
       <div className={styles.projectList}>
         {projects.map((project, index) => (
           <ProjectCase key={index} {...project} />

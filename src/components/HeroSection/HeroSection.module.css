@@ -113,7 +113,7 @@
 
 @media (max-width: 768px) {
   .hero {
-    height: 60rem; /* Static 600px at base mobile width */
+    height: auto;
     min-height: auto;
   }
   

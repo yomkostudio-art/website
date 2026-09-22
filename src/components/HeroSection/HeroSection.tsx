@@ -37,16 +37,6 @@ export default function HeroSection() {
         </div>
       </header>
 
-      <div className={styles.videoContainer}>
-        <video 
-          autoPlay 
-          muted 
-          loop 
-          playsInline 
-          className={styles.video}
-          src={assetUrl("/assets/media/hero-section/showreel-yomko-2.webm")}
-        />
-      </div>
 
 
     </section>
